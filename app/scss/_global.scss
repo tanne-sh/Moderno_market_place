@@ -56,6 +56,10 @@ body {
   padding: 0 30px;
 }
 
+.page-content {
+  background-color: $grey;
+}
+
 @media (max-width: 720px) {
   .container-fluid {
     padding: 0 30px;
@@ -73,6 +77,34 @@ body {
   display: inline-block;
   margin-right: 13px;
 }
-
+// создала хлебные крошки
 .breadcrumbs {
+  &__inner {
+    padding: 45px 0px 40px;
+  }
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+      & + li {
+        padding-left: 24px;
+        &::before {
+          content: "-";
+          color: $green;
+          position: absolute;
+          left: 8px;
+        }
+      }
+      &:last-child {
+        a,
+        span {
+          color: $bg;
+        }
+      }
+    }
+    a {
+      color: #b0bec5;
+    }
+  }
 }
+// стили для хлебных крошек
