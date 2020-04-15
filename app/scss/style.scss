@@ -195,9 +195,9 @@
   &-author {
     display: flex;
     align-items: center;
-    min-width: 245px;
+    max-width: 245px;
     .avatar {
-      width: 30px;
+      min-width: 30px;
       height: 30px;
       border-radius: 50%;
       background-position: center;
@@ -553,10 +553,12 @@
 }
 // end footer
 // start product page
+
 .product-page-inner {
   display: flex;
+  padding-bottom: 110px;
 }
-.product-page-aside {
+.product-page__aside {
   margin-right: 30px;
 }
 .aside-item {
@@ -598,7 +600,33 @@
     margin-left: 10px;
   }
 }
-
+.price-range {
+  form {
+    padding-top: 20px;
+  }
+  button {
+    margin-top: 55px;
+    background-color: $green;
+    color: #fff;
+    @include f500;
+    padding: 16px 10px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    &::before {
+      content: "\f002";
+      position: absolute;
+      color: #fff;
+      top: 15px;
+      left: 58px;
+      font-size: 15px;
+      font-family: "icomoon";
+    }
+  }
+}
 .irs-min,
 .irs-max {
   display: none;
@@ -625,5 +653,179 @@
 .irs--flat .irs-handle > i:first-child {
   display: none;
 }
+.irs-from,
+irs-single,
+.irs-to {
+  top: 45px;
+}
 
+.irs--flat .irs-from:before,
+.irs--flat .irs-single:before,
+.irs--flat .irs-to:before {
+  display: none;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-single,
+.irs--flat .irs-to {
+  color: #78909c;
+  font-size: 15px;
+  line-height: 1.333;
+  text-shadow: none;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.irs--flat .irs-handle {
+  top: 19px;
+}
+
+.product-page__aside {
+  .product__item-img {
+    min-height: 120px;
+  }
+  .product__item {
+    box-shadow: none;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dde3e8;
+  }
+  .product__item-content {
+    padding: 0;
+    min-height: 75px;
+    border-bottom: none;
+  }
+  .product__item-info {
+    padding: 0;
+  }
+  .product__item-title {
+    font-size: 16px;
+  }
+  .product__item-price {
+    font-size: 16px;
+    min-height: 0;
+  }
+  .product__item-starnum {
+    display: none;
+  }
+  .rate-star {
+    margin-right: 0;
+  }
+  .product__item-author .avatar {
+    margin-right: 9px;
+  }
+  .jq-ry-container {
+    padding: 0;
+  }
+}
+.aside__product-item {
+  .product__item:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+  .product__item:first-child {
+    margin-top: 25px;
+  }
+}
+.top-sellers__link {
+  padding: 16px 10px;
+  display: block;
+  color: #fff;
+  background-color: $green;
+  @include f500;
+  text-align: center;
+}
+
+.product-page__filter {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  padding: 0px 20px;
+  margin-bottom: 30px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #90a4ae;
+    &.active {
+      color: $green;
+    }
+  }
+}
+.product-page__filter-sort {
+  font-size: 14px;
+  color: #707070;
+  display: flex;
+  align-items: center;
+}
+
+button.icon-sort-amount-desc {
+  font-size: 18px;
+  color: #455a64;
+}
+button.icon-unsorted {
+  font-size: 14px;
+  color: #707070;
+}
+.product-page__content {
+  width: 100%;
+}
+.product-page__content {
+  .product__item {
+    max-width: 270px;
+  }
+  .product__item-img {
+    min-height: 180px;
+  }
+  .product__item-content {
+    padding: 10px 20px;
+  }
+  .product__item-title {
+    font-size: 16px;
+  }
+  .product__item-info {
+    min-height: 65px;
+    padding: 10px 20px;
+  }
+  .rate-star {
+    margin-right: 5px;
+  }
+  .jq-ry-container {
+    padding: 0;
+  }
+}
+.product-page__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.pagination__list {
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 6px;
+    }
+  }
+  a,
+  span {
+    width: 43px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    font-size: 16px;
+    color: $bg;
+    @include f500;
+    &.active {
+      background-color: $red;
+      color: #fff;
+    }
+  }
+}
 // end product page
