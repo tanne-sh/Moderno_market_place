@@ -74,9 +74,7 @@
     color: #a0a0a0;
     font-size: 14px;
   }
-  & + .heder__circle {
-    margin-left: 15px;
-  }
+
   span {
     position: absolute;
     width: 18px;
@@ -161,7 +159,8 @@
     @include f700;
   }
 }
-.user__box {
+.user__box,
+.basket__box {
   position: relative;
   height: 90px;
   margin-top: 40px;
@@ -174,6 +173,84 @@
     }
   }
 }
+
+.circle__menu {
+  position: absolute;
+  top: 62px;
+  right: 0;
+  border-top: 1px solid #e0e0e0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.basket__box {
+  margin-top: 54px;
+  margin-left: 15px;
+  &:hover {
+    .circle__menu {
+      overflow: auto;
+      height: auto;
+    }
+  }
+}
+
+.circle__item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  padding: 23px;
+  display: flex;
+  align-items: center;
+  width: 269px;
+}
+.circle__images {
+  margin-right: 15px;
+}
+.circle__info-name {
+  color: $bg;
+  @include f500;
+}
+.circle__info-theme {
+  color: $green;
+  font-size: 12px;
+}
+.circle__info-price {
+  color: #000;
+  @include f500;
+}
+
+.basket__summ {
+  padding: 16px 17px 12px;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  background-color: #fff;
+}
+.basket__title {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 13px;
+  padding-right: 22px;
+  margin-bottom: 15px;
+  @include f700;
+  font-size: 16px;
+  color: $bg;
+}
+.basket__btn {
+  @include f700;
+  color: #fff;
+  font-size: 14px;
+  padding: 12px 5px;
+  background-color: $green;
+  text-align: center;
+  width: 100px;
+}
+.basket__btn-checkout {
+  width: 122px;
+  margin-left: 6px;
+  background-color: $red;
+}
+
 .user__menu {
   left: 20px;
   top: 69px;
