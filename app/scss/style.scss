@@ -184,6 +184,7 @@
   height: 0;
   overflow: hidden;
   transition: all 0.3s;
+  z-index: 1;
 }
 
 .basket__box,
@@ -287,6 +288,7 @@
   transition: all 0.3s;
   height: 0;
   overflow: hidden;
+  z-index: 1;
   a {
     font-size: 12px;
     color: #546e7a;
@@ -308,7 +310,10 @@
 .icons-color::before {
   color: $tomato;
 }
-
+.header_btn-menu,
+.menu__btn {
+  display: none;
+}
 // end header
 // start search
 .search {

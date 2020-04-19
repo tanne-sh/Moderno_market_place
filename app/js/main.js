@@ -33,5 +33,13 @@ $(function () {
     $(".icon-th-list").removeClass("active");
   });
 
+  $(".menu__btn").on("click", function () {
+    $(".menu__list").slideToggle();
+  });
+
+  $(".header_btn-menu").on("click", function () {
+    $(".header__box").toggleClass("active");
+  });
+
   var mixer = mixitup(".products__inner-box");
 });
