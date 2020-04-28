@@ -1399,26 +1399,98 @@ button.icon-unsorted {
     background-color: #42a5f5;
   }
 }
-
-.aside-item {
-}
-.aside__title {
-}
 .product-author__box {
+  padding: 25px 0;
+  display: flex;
 }
 .autor__avatar {
+  margin-right: 14px;
 }
-.author__info {
-}
+
 .author__name {
+  font-size: 18px;
+  color: $bg;
+  margin-bottom: 2px;
 }
-.author__link {
+.author__info-link {
+  color: #707070;
+  font-size: 13px;
+  border: 1px solid #d6d6d6;
+  padding: 6px 9px 5px;
 }
 .author__awards-list {
+  li {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    &::before {
+      left: 0;
+      right: 0;
+      top: 6px;
+      position: absolute;
+    }
+    & + li {
+      margin-left: 4px;
+    }
+  }
+  .icon-meh-o {
+    background-image: url(../images/awards/orange.png);
+    width: 34px;
+    height: 37px;
+  }
+  .icon-pagelines {
+    background-image: url(../images/awards/red.png);
+    width: 34px;
+    height: 37px;
+  }
+  .icon-flash {
+    background-image: url(../images/awards/blue.png);
+    width: 34px;
+    height: 37px;
+  }
+  .icon-foursquare {
+    background-image: url(../images/awards/green.png);
+    width: 34px;
+    height: 37px;
+  }
+  .icon-yen {
+    background-image: url(../images/awards/grey.png);
+    width: 34px;
+    height: 37px;
+  }
 }
 .aside__item-sales {
+  padding-top: 23px;
+  font-size: 16px;
+  @include f300;
+  color: #707070;
+  span {
+    font-size: 20px;
+    @include f700;
+    color: #263238;
+    padding-right: 13px;
+    &::before {
+      content: "\f07a";
+      color: #a6b5bb;
+      padding-right: 20px;
+      font-family: "icomoon";
+    }
+  }
+}
+.aside-item.sales-number {
+  padding-bottom: 20px;
 }
 .information__line {
+  font-size: 14px;
+  color: #70838d;
+  margin-top: 20px;
+  line-height: 18px;
+  span {
+    color: $bg;
+    @include f500;
+  }
 }
 
 // end product-one
