@@ -1360,6 +1360,67 @@ button.icon-unsorted {
   }
 }
 
+.price__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.price__product {
+  font-size: 22px;
+  @include f500;
+  color: $red;
+}
+
+.product__price {
+  button {
+    margin-bottom: 7px;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    border: none;
+    background-color: $text;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 17px 5px 15px;
+    cursor: pointer;
+    &::before {
+      font-weight: 400;
+      font-family: "icomoon";
+      padding-right: 8px;
+    }
+  }
+  .icon-shopping-cart {
+    background-color: $green;
+  }
+  .icon-heart-o {
+    background-color: #42a5f5;
+  }
+}
+
+.aside-item {
+}
+.aside__title {
+}
+.product-author__box {
+}
+.autor__avatar {
+}
+.author__info {
+}
+.author__name {
+}
+.author__link {
+}
+.author__awards-list {
+}
+.aside__item-sales {
+}
+.information__line {
+}
+
 // end product-one
 
 @import "media";
