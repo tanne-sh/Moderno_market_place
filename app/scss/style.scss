@@ -1672,4 +1672,124 @@ button.icon-unsorted {
 }
 // end about
 
+// start contact
+.contact__head {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.contact__inner {
+  padding: 35px 40px 15px;
+}
+.contact__map {
+  margin-bottom: 50px;
+  iframe {
+    width: 100%;
+    height: 415px;
+  }
+}
+.contact__box {
+  display: flex;
+}
+.contact__info {
+  margin-right: 30px;
+  max-width: 330px;
+  width: 100%;
+}
+.contact__info-item {
+  margin-bottom: 30px;
+}
+.contact__info-title {
+  padding-bottom: 20px;
+  position: relative;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif !important;
+  @include f500;
+  color: $bg;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 4px;
+    background-color: $green;
+    left: 40px;
+    bottom: 0;
+  }
+  &::before {
+    font-family: "icomoon";
+    color: $green;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+  }
+}
+.contact__info-content {
+  padding-left: 40px;
+  color: #707070;
+  max-width: 230px;
+}
+.contact__form-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  @include f500;
+  color: #333;
+}
+.contact__form-row {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__form {
+  width: 100%;
+  input,
+  textarea,
+  button {
+    border: none;
+  }
+  input,
+  textarea {
+    display: block;
+    background-color: #f1f4f5;
+  }
+
+  input {
+    height: 43px;
+    width: 350px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-bottom: 30px;
+    &::placeholder {
+      font-size: 15px;
+      color: #7a7a7a;
+    }
+  }
+  textarea {
+    padding: 13px 17px;
+    height: 190px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 23px;
+    &::placeholder {
+      font-size: 15px;
+      color: #7a7a7a;
+    }
+  }
+  button {
+    background-color: $green;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    @include f700;
+    color: #fff;
+    padding: 20px 5px;
+    width: 190px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #6b943c;
+    }
+  }
+}
+// end contact
+
 @import "media";
