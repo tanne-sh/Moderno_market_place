@@ -1523,9 +1523,10 @@ button.icon-unsorted {
   &::before {
     content: "\f0d7";
     font-family: "icomoon";
-    color: $green;
+    color: $bg;
   }
 }
+
 .jq-selectbox__trigger {
   border-left: none;
 }
