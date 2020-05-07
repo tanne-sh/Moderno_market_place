@@ -32,6 +32,15 @@
   .product-one__images {
     max-width: 100%;
   }
+  .product-page-inner {
+    display: block;
+  }
+  .top-sellers {
+    display: none;
+  }
+  .aside-item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -76,7 +85,6 @@
       margin-left: 40px;
     }
   }
-
   .contact__box {
     display: block;
   }
@@ -96,6 +104,14 @@
   }
   .profile__aside-btn {
     max-width: 300px;
+  }
+  .product__item {
+    flex-basis: calc(50% - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .product-page__items {
+    margin-left: -20px;
   }
 }
 @media (max-width: 840px) {

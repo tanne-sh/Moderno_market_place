@@ -1139,8 +1139,9 @@ button.icon-unsorted {
 }
 .product-page__content {
   .product__item {
-    max-width: 270px;
     transition: all 0.5s;
+    flex-basis: calc(33.3333% - 30px);
+    margin-left: 30px;
   }
   .product__item-img {
     min-height: 180px;
@@ -1164,9 +1165,10 @@ button.icon-unsorted {
 }
 .product-page__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  margin-left: -30px;
 }
 .pagination__list {
   li {
@@ -1234,6 +1236,7 @@ button.icon-unsorted {
 .product__item {
   &.list {
     max-width: 100%;
+    flex-basis: 100%;
     .product__item-img {
       width: 240px;
       float: left;
