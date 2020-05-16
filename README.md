@@ -1,4 +1,17 @@
-e-commerce website. 13 pages + adaptive
+Проект по верстке интернет магазина. 13 страниц+
+------------------------------------------------
+-Сетка на flexbox
+-Семантическая, кроссбраузерная, адаптивная верстка
+-Именование классов по методологии БЭМ
+-SASS (импорт файлов, вложенные селекторы, переменные, миксины)
+-Автоматизация и сборка проекта на Gulp (browsersync, normalize, csscomb, autoprefixer, группировка медиафайлов, минификация CSS и изображений, сборка SVG спрайтов, группировка и вызов всех тасок командой npm run start)
+-Использование анимации (animation, transition)
+Работа с svg изображениями и svg спрайтами
+Замена стандартных чекбоксов и инпутов
+Работа с google map
+Использование сторонних скриптов: Slick slider
+
+##
 ![03_main_home](https://user-images.githubusercontent.com/61487027/81491860-b277c000-929b-11ea-9b30-207a93800eb7.png)
 ![04_all new items](https://user-images.githubusercontent.com/61487027/81491864-ba376480-929b-11ea-8530-e1d0781103ea.png)
 ![05_all new items](https://user-images.githubusercontent.com/61487027/81491866-bc012800-929b-11ea-9177-6b56f1b6c128.png)
